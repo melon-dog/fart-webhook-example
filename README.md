@@ -1,6 +1,7 @@
 # Fart webhook example
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/melon-dog/fart-webhook-example)
+[![Tests](https://github.com/melon-dog/fart-webhook-example/actions/workflows/test.yml/badge.svg)](https://github.com/melon-dog/fart-webhook-example/actions/workflows/test.yml)
 
 Minimal Cloudflare Worker that receives [Fart Noises](https://fart.jtez.xyz/developers)
 webhooks, verifies the HMAC signature and logs the payload.
@@ -130,6 +131,9 @@ npm run typecheck
 ```
 
 The tests cover valid/invalid HMAC signatures and the timestamp window.
+
+GitHub Actions runs `npm run typecheck` and `npm test` on every push and pull
+request (`.github/workflows/test.yml`).
 
 ## Notes
 
