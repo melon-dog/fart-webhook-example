@@ -1,0 +1,3 @@
+name = "fart-webhook-example"
+main = "src/index.ts"
+compatibility_date = "2026-10-22"
