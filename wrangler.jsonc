@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fart-webhook-example",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-22",
+  // Workers Logs: console.log payloads are visible in the Cloudflare dashboard.
+  "observability": {
+    "enabled": true
+  }
+}

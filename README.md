@@ -141,6 +141,8 @@ request (`.github/workflows/test.yml`).
 - The button clones the repository into your GitHub/GitLab account, so you can
   keep editing it after deploying.
 - The secret is only stored as a Worker secret; `.dev.vars` is gitignored.
+- Observability is enabled in `wrangler.jsonc`; `console.log` payloads are also
+  available in Workers Logs in the Cloudflare dashboard.
 - The Worker never echoes the secret.
 - The response body is irrelevant to Fart: only the status code matters.
 - Full payload/signature documentation:
